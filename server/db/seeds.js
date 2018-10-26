@@ -4,7 +4,7 @@ db.dropDatabase();
 
 db.global.insertMany([
   {
-    title: "problem",
+    title: "The effects of global warming",
     intro: "problem-intro",
     carousel: {
       carousel_one: {
@@ -33,7 +33,7 @@ db.global.insertMany([
   },
 
     {
-      title: "solution",
+      title: "There are solutions. Find out how!",
       intro: "solution-intro",
       carousel: {
         carousel_one: {
