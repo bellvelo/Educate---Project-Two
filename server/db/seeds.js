@@ -7,15 +7,15 @@ db.global.insertMany([
     title: "problem",
     intro: "problem-intro",
     carousel: {
-      carousel_one {
+      carousel_one: {
         image: "url",
         text: "text1"
       },
-      carousel_two {
+      carousel_two: {
         image: "url",
         text: "text1"
       },
-      carousel_three {
+      carousel_three: {
         image: "url",
         text: "text1"
       }
@@ -29,23 +29,26 @@ db.global.insertMany([
         "wrong3"
       ]
 
-    },
+    }
+  },
+
     {
       title: "solution",
       intro: "solution-intro",
       carousel: {
-        carousel_one {
+        carousel_one: {
           image: "url",
           text: "text1"
         },
-        carousel_two {
+        carousel_two: {
           image: "url",
           text: "text1"
         },
-        carousel_three {
+        carousel_three: {
           image: "url",
           text: "text1"
         },
+      },
         question: {
           question_text: "problem-question-text",
           correct_answer: "correct",
@@ -53,6 +56,7 @@ db.global.insertMany([
             "wrong1",
             "wrong2",
             "wrong3"
-          ]
-        }
+          ]}
+
+    }
       ]);
