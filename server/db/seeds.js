@@ -23,10 +23,11 @@ db.global.insertMany([
     question: {
       question_text: "problem-question-text",
       correct_answer: "correct",
-      incorrect_answers: [
+      answers: [
         "wrong1",
         "wrong2",
-        "wrong3"
+        "wrong3",
+        "correct"
       ]
 
     }
@@ -52,11 +53,13 @@ db.global.insertMany([
         question: {
           question_text: "problem-question-text",
           correct_answer: "correct",
-          incorrect_answers: [
+          answers: [
             "wrong1",
             "wrong2",
-            "wrong3"
-          ]}
+            "wrong3",
+            "correct"
+          ]
+        }
 
     }
       ]);
