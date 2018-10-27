@@ -9,7 +9,8 @@ const topicsContainer = document.querySelector('#topics-container');
 const topicListView = new TopicListView(topicsContainer);
 topicListView.bindEvents();
 
-const chosenTopicView = new ChosenTopicView(topicsContainer);
+const mainContainer = document.querySelector('#center-wrapper');
+const chosenTopicView = new ChosenTopicView(mainContainer);
 chosenTopicView.bindEvents();
 
 const educateUrl = 'http://localhost:3000/api/bbc';
