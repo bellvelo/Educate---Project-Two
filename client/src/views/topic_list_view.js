@@ -15,7 +15,9 @@ TopicListView.prototype.bindEvents = function () {
 TopicListView.prototype.render = function (topics) {
   this.container.innerHTML = "";
   const topicView = new TopicView(this.container);
+  // topics.forEach((topic) => console.log(topic));
   topics.forEach((topic) => topicView.render(topic));
+
 };
 
 

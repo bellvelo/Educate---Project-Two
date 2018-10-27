@@ -7,6 +7,13 @@ Request.prototype.get = function () {
     .then((response) => response.json());
 };
 
+Request.prototype.getTopic= function(id) {
+  return fetch(`${this.url}/${id}`, {
+    method: 'GET'
+  })
+  .then((response) =>  response.json());
+};
+
 Request.prototype.post = function (payload) {
   return fetch(this.url, {
     method: 'POST',

@@ -8,18 +8,23 @@ TopicView.prototype.render = function (topic) {
   const topicContainer = document.createElement('div');
   topicContainer.classList.add('topic-choice');
 
-  const title = this.createHeading(topic.title);
-  topicContainer.appendChild(title)
+  const topicButton = this.createButton(topic._id);
+  topicContainer.appendChild(topicButton);
 
   this.container.appendChild(topicContainer);
 
 };
 
-TopicView.prototype.createHeading = function (textContent) {
-  const heading = document.createElement('h1');
-  heading.textContent = textContent;
-  return heading;
-};
+TopicView.prototype.createButton = function (topicId) {
+  const button = document.createElement('button');
+  button.classList.add('topic-button');
+  button.value = topicId;
 
+  button.addEventListener('click', (evt) => {
+    PubSub.publish('TopicView:topic-button-clicked', evt.target.value);
+
+  })
+  return button;
+};
 
 module.exports = TopicView;
