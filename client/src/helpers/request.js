@@ -7,7 +7,7 @@ Request.prototype.get = function () {
     .then((response) => response.json());
 };
 
-Request.prototype.getTopic= function(id) {
+Request.prototype.getTopic = function(id) {
   return fetch(`${this.url}/${id}`, {
     method: 'GET'
   })

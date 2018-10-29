@@ -3,6 +3,9 @@ const TitleView = require('./title_view.js');
 const IntroView = require('./intro_view.js');
 const CarouselView = require('./carousel_view.js');
 const Question = require('./question_view.js');
+const QuestionDetailView = require('./question_detail_view.js');
+const QuestionView = require('./question_view.js')
+
 
 const ChosenTopicView = function(container) {
   this.container = container;
@@ -22,16 +25,20 @@ ChosenTopicView.prototype.render = function (topic) {
   mainContainer.classList.add('topic-main-container')
 
   const titleView = new TitleView(mainContainer);
-  titleView.render(topic)
+  titleView.render(topic);
 
-  const intro = new IntroView(mainContainer);
-  intro.render(topic);
+  const introView = new IntroView(mainContainer);
+  introView.render(topic);
 
-  const carousel = new CarouselView(mainContainer);
-  carousel.render(topic)
+  const carouselView = new CarouselView(mainContainer);
+  carouselView.render(topic);
 
-  const question = new Question(mainContainer);
-  question.render(topic)
+  const questionView = new QuestionView(mainContainer);
+  questionView.render(topic);
+
+  // const questionDetailView = new QuestionDetailView(mainContainer);
+  // questionDetailView.render(topic);
+
 
   this.container.appendChild(mainContainer);
 

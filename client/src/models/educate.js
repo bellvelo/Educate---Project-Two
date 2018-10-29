@@ -13,7 +13,9 @@ Educate.prototype.bindEvents = function () {
   })
   PubSub.subscribe('QuestionView:answer-button-clicked', (evt) => {
     console.dir(evt.detail);
-    this.checkAnswer(evt.detail);
+    const result = this.checkAnswer(evt.detail);
+    PubSub.publish('Educate:answer-checked', result);
+    // console.log(result); //boolean
   })
 };
 
@@ -35,15 +37,13 @@ Educate.prototype.getSelectedTopic = function (topicId) {
 };
 
 Educate.prototype.checkAnswer = function () {
-    console.dir(event.detail);
-    if (event.detail.correct_answer === event.detail.selected_answer) {
-      console.log('helloooo');
-    } else {
-      console.log('jog on!');
-    }
+  console.dir(event.detail);
 
-
-
+  if (event.detail.correct_answer === event.detail.selected_answer) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
 module.exports = Educate;

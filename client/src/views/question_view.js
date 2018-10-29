@@ -8,7 +8,7 @@ const QuestionView = function(container){
 QuestionView.prototype.render = function (topic) {
 
   const container = document.createElement('div');
-  container.classList.add('container');
+  container.classList.add('question-container');
 
   const question = document.createElement('h4');
   question.classList.add('question');
@@ -23,7 +23,6 @@ QuestionView.prototype.render = function (topic) {
 };
 
 QuestionView.prototype.renderOptions = function (topic, container) {
-
 
   topic.question.answers.forEach((answer) => {
     const button = document.createElement('button');
