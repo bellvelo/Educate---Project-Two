@@ -15,10 +15,11 @@ ol, ul {
 
 
 #intro {
-  width: 732pt;
-  font-size: 24pt;
-  font-weight: 400;
+  width: 600pt;
+  font-size: 18pt;
+  font-weight: normal;
   text-align: justify;
+  margin-top: 50pt;
 }
 
 #subject-title{
@@ -254,9 +255,9 @@ height:17pt;
 }
 
 .question-container{
-  width: 732pt;
+  width: 600pt;
   background-color: #F1F1F1;
-  height: 780pt;
+  height: 680pt;
 }
 
 .nav-bar-links {
@@ -433,8 +434,8 @@ height:17pt;
 
 .options {
   display: block;
-  width: 600pt;
-  padding-left: 66pt;
+  width: 90%;
+  padding-left: 5%;
 }
 
 .question-button {
@@ -454,9 +455,8 @@ height:17pt;
 
 .answer {
   display: block;
-  display: block;
-  width: 65%;
-  margin-left: 17.5%;
+  width: 90%;
+  margin-left: 5%;
   background-color: white;
 }
 
