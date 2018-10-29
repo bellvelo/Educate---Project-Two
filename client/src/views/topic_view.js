@@ -15,6 +15,7 @@ const topicListContainer = document.createElement('div')
 topicListContainer.classList.add('topic-list-container')
 
   const topInfoList = document.createElement('ol');
+  topInfoList.classList.add('topic-info-list');
 
   const topicInfoListItem = this.createListItem(topic, topInfoList);
 

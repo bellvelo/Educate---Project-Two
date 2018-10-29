@@ -9,9 +9,10 @@ a, a:visited{
   color: #333;
   text-decoration: none;
 }
-ol {
+ol, ul {
   list-style:none
 }
+
 
 #intro {
   width: 732pt;
@@ -255,6 +256,7 @@ height:17pt;
 .question-container{
   width: 732pt;
   background-color: #F1F1F1;
+  height: 780pt;
 }
 
 .nav-bar-links {
@@ -448,4 +450,37 @@ height:17pt;
 .question-button:hover{
   color: #e5640f;
   border: 4px solid #e5640f;
+}
+
+.answer {
+  display: block;
+  display: block;
+  width: 65%;
+  margin-left: 17.5%;
+  background-color: white;
+}
+
+.answer_text {
+  padding-top: 15pt;
+  font-size: 18pt;
+  font-weight: bold;
+  text-align: center;
+}
+.options-listed {
+  padding-left: 64pt;
+  font-size: 15pt;
+  color: #706d66;
+  text-align: justify;
+
+
+}
+.further-info {
+  padding: 15pt;
+  font-size: 12pt;
+}
+
+.question-option::before {
+  content: "●"; color: #e5640f;
+  display: inline-block; width: 1em;
+  margin-left: -1em;
 }

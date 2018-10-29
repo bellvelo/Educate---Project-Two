@@ -13,9 +13,13 @@ Educate.prototype.bindEvents = function () {
   })
   PubSub.subscribe('QuestionView:answer-button-clicked', (evt) => {
     console.dir(evt.detail);
-    const result = this.checkAnswer(evt.detail);
+
+    const result = {}
+    result.checked = this.checkAnswer(evt.detail);
+    result.topic = evt.detail.topic
     PubSub.publish('Educate:answer-checked', result);
     // console.log(result); //boolean
+  
   })
 };
 

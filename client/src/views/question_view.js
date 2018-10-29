@@ -52,10 +52,13 @@ QuestionView.prototype.renderOptions = function (topic, container, questionConta
     button.addEventListener('click', (evt) => {
       questionContainer.innerHTML = '';
       const questionData = {};
+      questionData.topic = topic;
       questionData.correct_answer = topic.question.correct_answer;
       questionData.selected_answer = event.target.value;
       PubSub.publish('QuestionView:answer-button-clicked', questionData);
       console.log(event.target.value);
+      console.dir(questionData);
+      
 
     });
     return button;
