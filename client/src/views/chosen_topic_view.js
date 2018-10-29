@@ -3,7 +3,6 @@ const TitleView = require('./title_view.js');
 const IntroView = require('./intro_view.js');
 const CarouselView = require('./carousel_view.js');
 const Question = require('./question_view.js');
-const QuestionDetailView = require('./question_detail_view.js');
 const QuestionView = require('./question_view.js')
 
 
@@ -35,10 +34,6 @@ ChosenTopicView.prototype.render = function (topic) {
 
   const questionView = new QuestionView(mainContainer);
   questionView.render(topic);
-
-  // const questionDetailView = new QuestionDetailView(mainContainer);
-  // questionDetailView.render(topic);
-
 
   this.container.appendChild(mainContainer);
 
