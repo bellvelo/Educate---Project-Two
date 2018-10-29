@@ -11,6 +11,10 @@ Educate.prototype.bindEvents = function () {
     console.dir(evt.detail);
     this.getSelectedTopic(evt.detail);
   })
+  PubSub.subscribe('QuestionView:answer-button-clicked', (evt) => {
+    console.dir(evt.detail);
+    this.checkAnswer(evt.detail);
+  })
 };
 
 Educate.prototype.getData = function () {
@@ -28,6 +32,18 @@ Educate.prototype.getSelectedTopic = function (topicId) {
     PubSub.publish('Educate:chosen-topic', topic)
   })
   .catch(console.error);
+};
+
+Educate.prototype.checkAnswer = function () {
+    console.dir(event.detail);
+    if (event.detail.correct_answer === event.detail.selected_answer) {
+      console.log('helloooo');
+    } else {
+      console.log('jog on!');
+    }
+
+
+
 };
 
 module.exports = Educate;

@@ -8,7 +8,7 @@ TitleView.prototype.render = function (topic) {
   console.dir(topic);
   console.dir(this.container);
   const headerContainer = document.createElement('div');
-  headerContainer.id = 'center-title-container'
+  headerContainer.classList.add('center-title-container');
 
   const title = document.createElement('h1');
   title.textContent = topic.title
