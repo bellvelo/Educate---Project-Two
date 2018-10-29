@@ -9,9 +9,9 @@ IntroView.prototype.render = function (topic) {
   console.dir(topic);
   console.dir(this.container);
   const introContainer = document.createElement('div');
-  introContainer.id = 'center-intro-container'
+  introContainer.classList.add('flex-container');
 
-  const intro = document.createElement('h3');
+  const intro = document.createElement('p');
   intro.textContent = topic.intro
   intro.id = 'intro'
 
