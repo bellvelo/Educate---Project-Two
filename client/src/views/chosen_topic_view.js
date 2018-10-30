@@ -4,6 +4,7 @@ const IntroView = require('./intro_view.js');
 const CarouselView = require('./carousel_view.js');
 const Question = require('./question_view.js');
 const QuestionView = require('./question_view.js')
+const ButtonView = require('./button_view.js');
 
 
 const ChosenTopicView = function(container) {
@@ -37,6 +38,9 @@ ChosenTopicView.prototype.render = function (topic) {
 
   const imageViewTwo = new CarouselView(mainContainer);
   imageViewTwo.render(topic.images.image_two);
+
+  const buttonView = new ButtonView(mainContainer); // NEW
+  buttonView.render(topic);
 
   this.container.appendChild(mainContainer);
 

@@ -4,6 +4,7 @@ const PubSub = require('../helpers/pub_sub.js');
 const Educate = function(url) {
   this.url = url;
   this.request = new Request(this.url);
+  this.allData = {}
 };
 
 Educate.prototype.bindEvents = function () {
@@ -23,11 +24,17 @@ Educate.prototype.bindEvents = function () {
     // console.log(result); //boolean
 
   })
+PubSub.subscribe('ButtonView:home-button-clicked', (evt) => {
+  // const home = evt.detail
+  PubSub.publish('Educate:all-data-loaded', this.allData);
+  console.log(this.allData);
+})
 };
 
 Educate.prototype.getData = function () {
   this.request.get()
   .then((topics) => {
+    this.allData = topics;
     PubSub.publish('Educate:all-data-loaded', topics);
     console.log(topics);
   })
@@ -36,7 +43,9 @@ Educate.prototype.getData = function () {
 
 Educate.prototype.getSelectedTopic = function (topicId) {
   this.request.getTopic(topicId)
+
   .then((topic) => {
+
     PubSub.publish('Educate:chosen-topic', topic)
   })
   .catch(console.error);

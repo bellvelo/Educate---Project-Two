@@ -5,6 +5,7 @@ db.dropDatabase();
 db.global.insertMany([
   {
     subject: "Geography",
+    link: "5bd5cbb4b7944d7ec3b265db",
     title: "The effects of global warming",
     intro: "Although the temperature increases have been gradual, most, but not all, scientists agree that the climate is getting gradually warmer. This is called global warming. Most, but not all, scientists lay the blame for this on human activities increasing the amount of carbon dioxide in the atmosphere. Global warming could cause climate change and extreme weather conditions in some areas.",
     topic_image: "../images/Pollution.png",
@@ -17,15 +18,11 @@ db.global.insertMany([
     images: {
       image_one: {
         image: "../images/Ice-caps.png",
-        text: "text1"
+        text: "The Ice Caps are like the canary in the gold mine. They tell us when it’s time to start worrying about Global Warming."
       },
       image_two: {
         image: "../images/Smog.png",
-        text: "Climate change is increasing the risk of extreme weather events, including droughts, flooding and heatwaves, according to a new report."
-      },
-      image_three: {
-        image: "url",
-        text: "text1"
+        text: "In the worst affected regions in China, smog can even lead to lung cancer and premature death"
       }
     },
     question: {
@@ -52,6 +49,7 @@ db.global.insertMany([
 
   {
     subject: "Geography",
+    link: "5bd5cbb4b7944d7ec3b265da",
     title: "Renewable Energy - the Solution?",
     intro: "Renewable energy is sustainable and will never run out. They provide clean energy because they are non-pollutant and non-contributor to greenhouse effects and global warming. Renewable energy facilities generally require less maintenance than traditional generators. Their fuel being derived from natural and available resources reduces the costs of operation.",
     topic_image:"../images/Renewables.png",
@@ -63,21 +61,17 @@ db.global.insertMany([
     ],
     images: {
       image_one: {
-        image: "url",
-        text: "text1"
+        image: "../images/Wind-img.png",
+        text: "An average turbine would produce the same amount of electric energy as that used by almost 332 households over a year."
       },
       image_two: {
-        image: "url",
-        text: "text1"
-      },
-      image_three: {
-        image: "url",
-        text: "text1"
-      },
+        image: "../images/Solar-img.png",
+        text: "Solar power is arguably the cleanest, most reliable form of renewable energy available, and it can be used in several forms to help power your home or business."
+      }
     },
     question: {
-      image: "../images/question-image.png",
-      answer_image: "../images/answer-image.png",
+      image: "../images/Renewable-un-selected.png",
+      answer_image: "../images/Renewable-selected.png",
       question_text: "Which Region is the largest investor in renewable energies?",
       correct_answer: "China",
       correct_order:[
@@ -86,7 +80,7 @@ db.global.insertMany([
        "Asia & Oceania",
        "United States of America"
      ],
-     further_info: "China, the world’s largest emitter of greenhouse gases, is determined to rebalance its energy mix, and incorporate more clean energy. That determination is reflected in the money it put into renewable energy last year, dwarfing spending by the next biggest investor, the US. Last year nearly half of the world’s new renewable energy investment of $279.8 billion (pdf, p.11) came from China, according to a report published April 5 by Bloomberg New Energy Finance, and the sustainable energy finance center run by the United Nations Environment Program and the Frankfurt School of Finance and Management. China’s investment in renewable energy—excluding large hydro projects—rose 30% compared with 2016, and was more than three times of that of the US, whose investment in the sector dropped 6% from 2016 to $40.5 billion last year.",
+     further_info: "China, the world’s largest emitter of greenhouse gases, is determined to rebalance its energy mix, and incorporate more clean energy. That determination is reflected in the money it put into renewable energy last year, dwarfing spending by the next biggest investor, the US. Last year nearly half of the world’s new renewable energy investment of $279.8 billion came from China, according to a report published April 5 by Bloomberg New Energy Finance, and the sustainable energy finance center run by the United Nations Environment Program and the Frankfurt School of Finance and Management. China’s investment in renewable energy—excluding large hydro projects—rose 30% compared with 2016, and was more than three times of that of the US, whose investment in the sector dropped 6% from 2016 to $40.5 billion last year.",
       answers: [
         "Europe",
         "United States of America",

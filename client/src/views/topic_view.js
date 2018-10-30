@@ -38,6 +38,7 @@ TopicView.prototype.createButton = function (topic) {
 
   button.addEventListener('click', (evt) => {
     PubSub.publish('TopicView:topic-button-clicked', evt.target.value);
+    console.dir(evt.target.value);
 
   })
   return button;
