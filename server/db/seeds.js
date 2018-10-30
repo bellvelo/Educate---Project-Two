@@ -16,12 +16,12 @@ db.global.insertMany([
     ],
     images: {
       image_one: {
-        image: "url",
+        image: "../images/Ice-caps.png",
         text: "text1"
       },
       image_two: {
-        image: "url",
-        text: "text1"
+        image: "../images/Smog.png",
+        text: "Climate change is increasing the risk of extreme weather events, including droughts, flooding and heatwaves, according to a new report."
       },
       image_three: {
         image: "url",

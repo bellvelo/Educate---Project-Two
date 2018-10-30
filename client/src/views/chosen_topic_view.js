@@ -29,11 +29,14 @@ ChosenTopicView.prototype.render = function (topic) {
   const introView = new IntroView(mainContainer);
   introView.render(topic);
 
-  const carouselView = new CarouselView(mainContainer);
-  carouselView.render(topic);
+  const imageViewOne = new CarouselView(mainContainer);
+  imageViewOne.render(topic.images.image_one);
 
   const questionView = new QuestionView(mainContainer);
   questionView.render(topic);
+
+  const imageViewTwo = new CarouselView(mainContainer);
+  imageViewTwo.render(topic.images.image_two);
 
   this.container.appendChild(mainContainer);
 

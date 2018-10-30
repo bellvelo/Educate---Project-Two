@@ -9,7 +9,7 @@ const answerContainer = document.querySelector('#answer');
 const questionDetailView = new QuestionDetailView(answerContainer);
 questionDetailView.bindEvents();
 
-const topicsContainer = document.querySelector('#topics-container');
+const topicsContainer = document.querySelector('#center-wrapper');
 const topicListView = new TopicListView(topicsContainer);
 topicListView.bindEvents();
 

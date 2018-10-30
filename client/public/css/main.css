@@ -241,11 +241,31 @@ text-align: center;
 height:17pt;
 }
 
+.info-image-container{
+  width: 600pt;
+  background-color: #F1F1F1;
+}
+
+.info-image{
+  width: 90%;
+  padding-left: 5%;
+  padding-top: 5%;
+}
+
 
 
 .flex-container{
   display: flex;
   justify-content: center;
+  margin-bottom: 60pt;
+}
+
+.image-caption{
+
+  padding-left: 5%;
+  width:90%;
+  font-size: 15pt;
+
 }
 
 ::-webkit-input-placeholder {
