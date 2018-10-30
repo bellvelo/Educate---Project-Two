@@ -14,16 +14,16 @@ db.global.insertMany([
       "What effect does it have on you ",
       "Test your knowledge"
     ],
-    carousel: {
-      carousel_one: {
+    images: {
+      image_one: {
         image: "url",
         text: "text1"
       },
-      carousel_two: {
+      image_two: {
         image: "url",
         text: "text1"
       },
-      carousel_three: {
+      image_three: {
         image: "url",
         text: "text1"
       }
@@ -61,16 +61,16 @@ db.global.insertMany([
       "Learn from the past",
       "Calculate your annual carbon footprint"
     ],
-    carousel: {
-      carousel_one: {
+    images: {
+      image_one: {
         image: "url",
         text: "text1"
       },
-      carousel_two: {
+      image_two: {
         image: "url",
         text: "text1"
       },
-      carousel_three: {
+      image_three: {
         image: "url",
         text: "text1"
       },

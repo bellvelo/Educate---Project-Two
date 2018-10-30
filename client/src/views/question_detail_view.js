@@ -52,10 +52,11 @@ QuestionDetailView.prototype.render = function (answerData) {
 
 };
 QuestionDetailView.prototype.checkText = function (answerData) {
+  console.dir(answerData);
   if (answerData.checked) {
-    return `That is the Correct answer. Here's how they rank:`
+    return `${answerData.correct_answer} is the Correct answer. Here's how they rank:`
   } else {
-    return `That's not the Correct answer. Here's how they rank:`
+    return `${answerData.selected_answer} is not the Correct answer, its ${answerData.correct_answer}. Here's how they rank:`
   }
 };
 

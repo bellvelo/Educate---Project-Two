@@ -17,9 +17,11 @@ Educate.prototype.bindEvents = function () {
     const result = {}
     result.checked = this.checkAnswer(evt.detail);
     result.topic = evt.detail.topic
+    result.correct_answer = evt.detail.correct_answer; //NEW
+  result.selected_answer = evt.detail.selected_answer; //NEW
     PubSub.publish('Educate:answer-checked', result);
     // console.log(result); //boolean
-  
+
   })
 };
 
