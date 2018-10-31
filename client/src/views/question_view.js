@@ -13,6 +13,11 @@ QuestionView.prototype.render = function (topic) {
   const container = document.createElement('div');
   container.classList.add('question-container');
 
+  const title = document.createElement('h2');
+  title.textContent = "Question time!"
+  title.classList.add('question-container-title')
+  container.appendChild(title)
+
   const questionImage = document.createElement('img');
   questionImage.src = topic.question.image
   questionImage.classList.add("question-map")
@@ -58,7 +63,7 @@ QuestionView.prototype.renderOptions = function (topic, container, questionConta
       PubSub.publish('QuestionView:answer-button-clicked', questionData);
       console.log(event.target.value);
       console.dir(questionData);
-      
+
 
     });
     return button;

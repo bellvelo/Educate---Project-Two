@@ -7,7 +7,18 @@ db.global.insertMany([
     subject: "Geography",
     link: "5bd5cbb4b7944d7ec3b265db",
     title: "The effects of global warming",
-    intro: "Although the temperature increases have been gradual, most, but not all, scientists agree that the climate is getting gradually warmer. This is called global warming. Most, but not all, scientists lay the blame for this on human activities increasing the amount of carbon dioxide in the atmosphere. Global warming could cause climate change and extreme weather conditions in some areas.",
+    intro: {
+      text: "Although the temperature increases have been gradual, most, but not all, scientists agree that the climate is getting gradually warmer. This is called global warming. Most, but not all, scientists lay the blame for this on human activities increasing the amount of carbon dioxide in the atmosphere. Global warming could cause climate change and extreme weather conditions in some areas.",
+      header: "What is global warming"
+    },
+
+    middle_para: {
+      text: "When fossil fuels are burnt - by industry, in power stations and in vehicles and planes - the gases enter the atmosphere. Although these gasses have always been present in the world's atmosphere, their concentration is gradually increasing as more and more fossil fuels are burnt. Scientists believe that the build-up of these so-called greenhouse gases in the atmosphere acts like a blanket or greenhouse around the planet; heat is trapped inside the Earth's atmosphere. This is the greenhouse effect, and the resulting increase in global temperatures is called global warming.",
+    header: "The greenhouse effect"},
+
+    end_para: {
+      text: "Exposure to Smog (a form of air pollution) poses a threat to the health of Chinese citizens. A study from 2012 shows fine particles in the air, which cause respiratory and cardiovascular diseases are one of the key pollutants that are accounted for a large fraction of damage on the health of Chinese citizens.",
+    header: "Air Pollution"},
     topic_image: "../images/Pollution.png",
     info_points: [
       "What is global warming",
@@ -44,20 +55,41 @@ db.global.insertMany([
         "India"
       ]
 
-    }
+    },
+    chart_data: {
+    chart_info: [
+      ['Country', '1990', '2000', '2010'],
+      ['India', 1000000, 4000000, 6000000],
+      ['China', 5000000, 4600000, 1150000],
+      ['USA', 2000000, 6000000, 10000000],
+      ['Russia', 900000, 1700000, 3500000]
+    ],
+    chart_title: "Airborne CO2 levels",
+    chart_subtitle: "Data range: 1990-2010"
+  }
   },
 
   {
     subject: "Geography",
     link: "5bd5cbb4b7944d7ec3b265da",
     title: "Renewable Energy - the Solution?",
-    intro: "Renewable energy is sustainable and will never run out. They provide clean energy because they are non-pollutant and non-contributor to greenhouse effects and global warming. Renewable energy facilities generally require less maintenance than traditional generators. Their fuel being derived from natural and available resources reduces the costs of operation.",
+    intro: {
+      text: "Renewable energy is sustainable and will never run out. They provide clean energy because they are non-pollutant and non-contributor to greenhouse effects and global warming. Renewable energy facilities generally require less maintenance than traditional generators. Their fuel being derived from natural and available resources reduces the costs of operation.",
+      header: "What is renewable energy"
+    },
     topic_image:"../images/Renewables.png",
+    middle_para: {
+      text: "Wind Energy captures the natural wind in our environment and converts the air’s motion into mechanical energy. In general, wind speeds are higher near the coast and offshore since there are fewer objects like vegetation, mountains and buildings to slow them down. The mechanism used to convert air motion into electricity is referred to as a turbine. A turbine is a large structure with several spinning blades. These blades are connected to an electro-magnetic generator that generates electricity when the wind causes the blades to spin.",
+    header: "Wind power explained"},
+
+    end_para: {
+      text: "Many are familiar with solar panels, found on things like spacecraft, rooftops, and handheld calculators.  When sunlight hits the cells, it knocks electrons loose from their atoms. As the electrons flow through the cell, they generate electricity. On a much larger scale, solar-thermal power plants employ various techniques to concentrate the sun’s energy as a heat source. The heat is then used to boil water to drive a steam turbine that generates electricity in much the same fashion as coal and nuclear power plants, supplying electricity for thousands of people.",
+    header: "Solar Energy"},
     info_points: [
-      "Is renewable energy the future? ",
-      "How we can all help",
-      "Learn from the past",
-      "Calculate your annual carbon footprint"
+      "What is renewable energy? ",
+      "How we can harness renewable energy",
+      "What are the benefits and draw backs ",
+      "Growth of renewable energies"
     ],
     images: {
       image_one: {
@@ -87,7 +119,18 @@ db.global.insertMany([
         "China",
         "Asia & Oceania"
       ]
-    }
+    },
+    chart_data: {
+    chart_info: [
+      ['Country', '1990', '2000', '2010'],
+      ['India', 1000000, 4000000, 6000000],
+      ['China', 5000000, 4600000, 1150000],
+      ['USA', 2000000, 6000000, 10000000],
+      ['Russia', 900000, 1700000, 3500000]
+    ],
+    chart_title: "Investment in Renewable Energies",
+    chart_subtitle: "Data range: 1990-2010"
+  }
 
   }
 
