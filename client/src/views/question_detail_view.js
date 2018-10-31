@@ -16,6 +16,14 @@ QuestionDetailView.prototype.render = function (answerData) {
 
   const container = document.querySelector('.question-container');
 
+  const flexContainer = document.createElement('div');
+  flexContainer.classList.add('flex-container');
+
+  const title = document.createElement('h2');
+  title.textContent = "Question time!"
+  title.classList.add('question-container-title')
+  container.appendChild(title)
+
   const questionImage = document.createElement('img');
   questionImage.src = answerData.topic.question.answer_image
   questionImage.classList.add("question-map")

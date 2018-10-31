@@ -565,6 +565,10 @@ height:17pt;
   margin-top: 180pt;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
+  background-image: url(https://ichef.bbci.co.uk/images/ic/raw/p06kbj97.png);
+  background-size: 1178.5pt;
+  height: auto;
+
 }
 
 
@@ -572,15 +576,30 @@ height:17pt;
 
 #iplayer-link-container{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 732pt;
+  padding-bottom: 20pt;
 }
 
 .iplayer-link{
-  width: 25%;
-
+  width: 23.5%;
+  background-color: #F1F1F1;
 }
 
+.iplayer-image{
+  width: 100%;
+}
+
+.iplayer-text{
+  height: 28pt;
+  margin-left: 8pt;
+  margin-right: 8pt;
+}
+
+.channel-title{
+  color: grey;
+  margin-left: 8pt;
+}
 
  #columnchart_material {
   width: 800px;
