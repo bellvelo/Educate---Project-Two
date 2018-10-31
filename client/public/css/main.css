@@ -568,11 +568,7 @@ height:17pt;
   background-image: url(https://ichef.bbci.co.uk/images/ic/raw/p06kbj97.png);
   background-size: 100%;
   height: auto;
-
 }
-
-
-
 
 #iplayer-link-container{
   display: flex;
@@ -605,3 +601,76 @@ height:17pt;
   width: 800px;
   height: 500px;
  }
+
+ #footer-link-flex{
+   display: flex;
+   justify-content: center;
+ }
+
+ #footer-link-container{
+   width: 700pt;
+   display: flex;
+   justify-content: center;
+   border-bottom: 1pt solid black;
+   padding-bottom: 15pt;
+   padding-top: 15pt;
+ }
+
+  #border-right{
+    border-right: 1px solid black;
+  }
+
+ .footer-list-container{
+   width: 16.6%;
+   display: inline-grid;
+  }
+
+  .footer-link{
+    width: 100%;
+    padding-top: 12pt;
+    padding-left: 12pt;
+  }
+
+  .footer-link-top{
+        width: 100%;
+        padding-left: 12pt;
+  }
+
+  #terms-flex{
+  display: flex;
+  justify-content: center;
+  }
+
+  .footer-terms-link{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #footer-terms-container{
+    padding-top: 15pt;
+    width: 700pt;
+  }
+
+  .copyright-container{
+    margin-top: 8pt;
+    width: 600pt;
+    display: inline-flex;
+  }
+
+  .newsletter-link{
+    margin-top: 10pt;
+  }
+
+  .copyright-p{
+    width: 18%;
+  }
+
+  .terms-p {
+    width: 44%;
+    font-weight: lighter;
+    color: #757575;
+  }
+
+  .footer-link:hover, .footer-link-top:hover, .terms-link:hover, .newsletter-link:hover{
+    text-decoration: underline;
+  }

@@ -59,10 +59,11 @@ db.global.insertMany([
     chart_data: {
     chart_info: [
       ['Country', '1990', '2000', '2010'],
-      ['India', 1000000, 4000000, 6000000],
-      ['China', 5000000, 4600000, 1150000],
-      ['USA', 2000000, 6000000, 10000000],
-      ['Russia', 900000, 1700000, 3500000]
+      ['India', 5940000, 8100000, 9500000],
+      ['China', 3500000, 7660000, 11500000],
+      ['USA', 5920000, 8800000, 10500000],
+      ['Russia', 4280000, 6200000, 9400000]
+
     ],
     chart_title: "Airborne CO2 levels",
     chart_subtitle: "Data range: 1990-2010"
@@ -123,10 +124,10 @@ db.global.insertMany([
     chart_data: {
     chart_info: [
       ['Country', '1990', '2000', '2010'],
-      ['India', 1000000, 4000000, 6000000],
+      ['Asia & Oceania', 1000000, 4000000, 6000000],
       ['China', 5000000, 7100000, 11500000],
-      ['USA', 2000000, 6000000, 10000000],
-      ['Russia', 900000, 1700000, 3500000]
+      ['Europe', 2000000, 6000000, 10000000],
+      ['USA', 900000, 1700000, 3500000]
     ],
     chart_title: "Investment in Renewable Energies",
     chart_subtitle: "Data range: 1990-2010"
